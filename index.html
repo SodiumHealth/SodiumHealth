@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <style>
+		  bold{
+			  font-family:"Segoe", "Segoe UI", "DejaVu Sans", "Trebuchet MS", "Verdana", "sans-serif";
+			  color:white;
+			  font-weight:bolder;			 
+		    }
+		pre{
+			font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Verdana", "sans-serif";
+			text-align:left;
+			margin-left:10px;
+			}
+		div.jumbotron{
+			background-color:#AAA8A8;  
+		  }
+		  h1.display-4{
+			  color:white;
+		  }
+		  body{
+			  background-color:#AAA8A8;
+		  }
+		  a.Access{
+			  color:#585353;
+		  }
+		  a.source{
+			  color:#585353;
+		  }
+		  #myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position:relative;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding-right: 80px;
+padding-left: 60px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+	</style>
+</head>
+<!-- The video -->
+<video autoplay muted loop id="myVideo">
+  <source src="video/006.mp4" type="video/mp4">
+</video>
+
+<body>
+<!-- Optional: some overlay text to describe the video -->
+<div class="content">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sodium Health</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap-4.2.1.css" rel="stylesheet">
+  
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <a class="navbar-brand" href="#">Sodium Health</a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+       </button>
+</nav>
+<div class="jumbotron jumbotron-fluid text-center">
+       <h1 class="display-4">Sodium Health</h1>
+<hr class="my-4">
+         <pre><bold>Driving Question:</bold>
+How much salt is there in the foods we eat regularly and is it healthy?
+
+<bold>Connections to the real world. Why is this topic important to me?</bold>
+Salt is important to maintain bodily functions but consuming too much can cause problems.
+Therefore, I am investigating how much salt should be consumed per day and how salty are foods we eat on a regular basis. 
+
+<bold>What I already know:</bold>
+•	Chinese takeaway is one of the saltiest foods Australians eat.
+•	Salt can cause problems when consuming too much.
+•	Salt in a small amount is healthy
+•	Salt is beneficial to our health in small amounts daily (we need it to function normally)
+
+<bold>How I plan to find out more about this:</bold>
+•	Search online
+•	Read food magazines
+ 
+<bold>Information on Salt</bold>
+Salt is crucial for life; however, Australians are consuming to much of it.
+Salt is commonly known as salt and its scientific name is sodium chloride (NaCI). 
+It is the sodium in sodium chloride that is harmful when consumed in large amounts.
+Consuming too much salt over a long period of time can cause your blood pressure to increase which results in higher risk of high blood pressure.
+High blood pressure is a major risk factor for heart disease. 
+
+<bold>How Much Salt is too Much?</bold>
+An average Australian consumes nearly double of the amount of sodium needed for good health.
+Adult bodies (14 or older) only require 1 to 2 grams of salt (460-920 mg of sodium) daily to function normally.
+The recommended maximum salt consumption for adults is 5 grams of salt per day (2000 mg of sodium).
+
+<bold>Sources:</bold>
+•	<a class="source" href="https://www.heartfoundation.org.au/healthy-eating/food-and-nutrition/salt">www.heartfoundation.org.au/healthy-eating/food-and-nutrition/salt</a>
+•	<a class="source" href="https://www.betterhealth.vic.gov.au/health/healthyliving/salt">www.betterhealth.vic.gov.au/health/healthyliving/salt</a>
+•	<a class="source" href="https://www.healthdirect.gov.au/salt-facts">https://www.healthdirect.gov.au/salt-facts</a> 
+
+<bold>These sources are very reliable because:</bold>
+1.	www.hearfoundation.org.au
+is a charity website which the information is focused on the human heart and salt is highly related to human heart illnesses. 
+2.	www.betterhealth.vic.gov.au
+is a highly reliable website because it is a Victoria government website focused on informing the public about better health.
+3.	https://www.healthdirect.gov.au/salt-facts
+is also a highly reliable source because it is an Australian government website focusing on informing the public of health recommendations.
+
+<bold>Brainstorm: Product/Exhibition Ideas:</bold>
+Use a database to show the information I will be presenting.
+
+<bold>Final Solution</bold> 
+I am using a database to enter information of amounts of salt in different foods and other related information.
+I will explore many sources for information of salt in different foods. Use website to present template.
+
+<bold>Resources Required:</bold>
+Computer, access to Microsoft Office software “Access”. May require website files to display locally if website is blocked by school internet.
+</pre>
+	
+<a class="Access" href="Salt Tracker (PDHPE Assessment).accdb">Access Database - Sodium</a>
+  <!-- Use a button to pause/play the video with JavaScript -->
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="jquery-3.3.1.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="popper.min.js"></script>
+    <script src="bootstrap-4.2.1.js"></script>
+	<script>
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+  </body>
+</html>
